@@ -1,13 +1,11 @@
 import Navbar from "../../Components/Navbar/Navbar";
 import styles from "./ProjectPage.module.css";
 import ProjectCard from "../../Components/ProjectCard/projectCard";
-import teamtrackrIMG from "../../assets/teamtrackrIMG.png";
-import marketingIMG from "../../assets/marketingIMG.png";
 import travelHookIMG from "../../assets/travelhookIMG.png";
-import safecamIMG from "../../assets/safecamIMG.png";
 import quizIMG from "../../assets/quizIMG.png";
-// import weatherAppImg from '../../assets/weaht.png'
-import carInfo from '../../assets/carInfo.png'
+import carInfo from "../../assets/carInfo.png";
+import etmPic from "../../assets/etmPic.png";
+import ogPic from "../../assets/ogPic.png";
 import { motion } from "framer-motion";
 import ComponentTitle from "../../Components/ComponentTitle/ComponentTitle";
 import Circle from "../../Components/Circle/Circle";
@@ -27,9 +25,12 @@ function Projects() {
             transition={{ delay: ".5", duration: ".3", stiffness: "100" }}
             className={styles.projects_component}
           >
+            {/* -------------------project 1---------------- */}
             <ProjectCard
               previewLink={"https://qquizzz-react-app.netlify.app/"}
-              githubLink={"https://github.com/MDMUNTAZEEMSARADGI/Quiz_App-reactjs"}
+              githubLink={
+                "https://github.com/MDMUNTAZEEMSARADGI/Quiz_App-reactjs"
+              }
               projectName={"React Quiz App"}
               projectDetails={
                 "React Quiz App: Answer React questions, get results. Fun way to test React knowledge. Simple, interactive, and informative!"
@@ -42,9 +43,15 @@ function Projects() {
                 "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
               ]}
             />
+            {/* -------------------project 2---------------- */}
+
             <ProjectCard
-              previewLink={"https://mdmuntazeemsaradgi.github.io/CarInfo-Bootstrap/"}
-              githubLink={"https://github.com/MDMUNTAZEEMSARADGI/CarInfo-Bootstrap"}
+              previewLink={
+                "https://mdmuntazeemsaradgi.github.io/CarInfo-Bootstrap/"
+              }
+              githubLink={
+                "https://github.com/MDMUNTAZEEMSARADGI/CarInfo-Bootstrap"
+              }
               projectName={"Car Info-Bootstrap"}
               projectDetails={
                 "This is car information displaying website. Interactive Web Application based Bootstrap responsive."
@@ -54,33 +61,60 @@ function Projects() {
                 "https://cdn.worldvectorlogo.com/logos/html-1.svg",
                 "https://cdn.worldvectorlogo.com/logos/css-3.svg",
                 "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-                "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg"
+                "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
               ]}
             />
-            {/* <ProjectCard
-              previewLink=
-              githubLink=
-              projectName=
-              projectDetails={
-                "It is a responsive and Mobile friendly static webpage created using pure HTML, CS and jQuery."
-              }
-              demoImage={marketingIMG}
-              key={"Marketing Solutions Webpage"}
-              skill_img={[
-                "https://cdn.worldvectorlogo.com/logos/html-1.svg",
-                "https://cdn.worldvectorlogo.com/logos/css-3.svg",
-                "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-              ]}
-            /> */}
+            {/* -------------------project 3---------------- */}
+
             <ProjectCard
-              // previewLink={"https://travelhook.netlify.app/"}
-              githubLink={"https://github.com/MDMUNTAZEEMSARADGI/Explorify-MERN"}
+              previewLink={"https://travelhook.netlify.app/"}
+              githubLink={
+                "https://github.com/MDMUNTAZEEMSARADGI/Explorify-MERN"
+              }
               projectName={"Explorify-Travel Planner"}
               projectDetails={
                 "It is a responsive and Mobile friendly static webpage created using pure HTML, CS, JavaScript and Reactjs."
               }
               demoImage={travelHookIMG}
               key={"Travel Hook Webpage"}
+              skill_img={[
+                "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+                "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+                "https://cdn.worldvectorlogo.com/logos/css-3.svg",
+                "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+              ]}
+            />
+            {/* -------------------project 4---------------- */}
+
+            <ProjectCard
+              previewLink={"https://employees-task-management.netlify.app/"}
+              githubLink={
+                "https://github.com/MDMUNTAZEEMSARADGI/Employees-task-management"
+              }
+              projectName={"Employees Task Management"}
+              projectDetails={
+                "•Frontend development using Reactjs for creating interactive, intuitive and responsive website. Context API: Data is passed locally using context API so that every component can easily access data."
+              }
+              demoImage={etmPic}
+              key={"Employees task management Webpage"}
+              skill_img={[
+                "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+                "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+                "https://cdn.worldvectorlogo.com/logos/css-3.svg",
+                "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+              ]}
+            />
+            {/* -------------------project 5---------------- */}
+
+            <ProjectCard
+              previewLink={""}
+              githubLink={"https://github.com/MDMUNTAZEEMSARADGI/og-webpage"}
+              projectName={"OG webpage"}
+              projectDetails={
+                "•Frontend development using Reactjs for creating interactive, intuitive website. Libraries used Framer-motion: For animation Locomotive-scroll: For smooth scrolling."
+              }
+              demoImage={ogPic}
+              key={"Animated Webpage"}
               skill_img={[
                 "https://cdn.worldvectorlogo.com/logos/react-2.svg",
                 "https://cdn.worldvectorlogo.com/logos/html-1.svg",

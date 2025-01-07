@@ -1,8 +1,7 @@
 import Navbar from "../../Components/Navbar/Navbar.jsx";
 import style from "./HomePage.module.css";
-import HeroImage from "../../assets/heroImg.jpeg"
+import HeroImage from "../../assets/heroImg.jpeg";
 import { motion } from "framer-motion";
-
 
 function HomePage() {
   return (
@@ -40,7 +39,7 @@ function HomePage() {
             }}
             className={style.bottom_text_style}
           >
-            &lt;Frontend Developer/&gt;
+            &lt;Software Developer/&gt;
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -53,9 +52,10 @@ function HomePage() {
             }}
             className={style.detail_text}
           >
-            Passionate and detail-oriented Frontend Developer, Proficient in
-            React.js along with HTML, CSS, and JavaScript, with a strong
-            foundation in responsive design and user experience principles.
+            Passionate and detail-oriented Software Developer, Proficient in
+            Front End and Back End along with DBMS, Github, VS Code with a
+            strong foundation in responsive design and user experience
+            principles.
           </motion.p>
           <motion.button
             initial={{ opacity: 0, x: "-7vw" }}
@@ -66,9 +66,9 @@ function HomePage() {
             <a
               className="link_under_button"
               target="_blank"
-              href="https://drive.google.com/file/d/1-SOwePx2PyKGqtXTxVPh3U7u7HAKY-8c/view?usp=drivesdk"
+              href="public\Muntazeem2501.pdf"
+              download
             >
-
               Download CV
             </a>
           </motion.button>
