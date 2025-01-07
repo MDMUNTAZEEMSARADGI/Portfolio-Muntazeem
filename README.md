@@ -1,2 +1,3 @@
 # Portfolio-Muntazeem
-Responsive Portfolio using reactjs
+
+Responsive Portfolio using reactjs and framer-motion
